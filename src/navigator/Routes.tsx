@@ -1,3 +1,5 @@
 export default {
-    HOME : "Home"
+    HOME : "Home",
+    DASHBOARD : "DashBoard",
+    SETTINGS : "Settings"
 }
