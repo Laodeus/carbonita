@@ -1,12 +1,21 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native-ui-lib';
+import { StyleSheet } from 'react-native';
+import { View, Text } from 'react-native-ui-lib';
 
-export default ()=>{
+import ForestCard from './DashBoard/ForestsCard';
 
-    return (
-        <View flex center>
-          <Text blue40 text10>DashBoard</Text>
-    
-        </View>
-      ); 
+export default () => {
+  return (
+    <View flex centerH>
+      <Text blue40 text20 style={styles.marginTop5pc}>Dashboard</Text>
+      <ForestCard />
+
+    </View>
+  );
 }
+
+const styles = StyleSheet.create({
+  marginTop5pc: {
+    marginTop: "5%"
+  }
+})
